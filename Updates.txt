@@ -4,3 +4,9 @@ This file will be updated regularly, at least weekly.
 5.11.2022 - Completed a button interruption calling function and header
 Author: Maciej Zieliński
 
+5.11.2022 - Completed simple code to check if interruption worked: built-in LED interruption control - working.
+Press S1 - Light up RED diode
+Press S2 - Activate interruption to control:
+S3 - Blue diode, S4 - Green diode
+Author: Maciej Zieliński
+
