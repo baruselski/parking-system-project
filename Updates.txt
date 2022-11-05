@@ -1,0 +1,6 @@
+In this file we will document all changes done to the project, as a means to keep track of our progress.
+This file will be updated regularly, at least weekly.
+
+5.11.2022 - Completed a button interruption calling function and header
+Author: Maciej Zieliński
+
