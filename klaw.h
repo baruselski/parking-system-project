@@ -9,7 +9,7 @@
 #define S1	10					// bit number for S1
 #define S2	11					// bit number for S2
 #define S3	8					// bit number for S3
-#define S4	9					// bit number S4
+#define S4	9					// bit number for S4
 
 void Klaw_Init(void);
 void Klaw_S1_S2_Int(void);
