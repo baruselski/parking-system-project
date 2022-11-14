@@ -11,3 +11,5 @@ Press S2 - Activate interruption to control the number of free spaces (variable 
 S3 - Inkrements, S4 - Decrement
 Author: Maciej Zieliński
 
+11.11.2022 - Started working on 7 segment display handling - solid progress but needs further testing
+Author: Maciej Zieliński, Bartosz Żołądź
