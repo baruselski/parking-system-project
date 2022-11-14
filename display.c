@@ -18,7 +18,7 @@ void display_init(void){
 }
 
 void display_func(n,seg){
-		if(seg==1){								// Wybór segmentu
+		if(seg==1){								// Segment choice
 			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);
 			PTA->PCOR |= (1<<digit2);
 			PTA->PDOR |= (1<<digit1);
@@ -29,7 +29,7 @@ void display_func(n,seg){
 			PTA->PDOR |= (1<<digit2);
 		}
 	
-		switch(n){								// Wybór cyfry dla danego segmentu
+		switch(n){								// Choosing correct segments for every number
 			
 			case 0: PTB->PCOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f); break;
 			case 1: PTB->PCOR |= (1<<b)|(1<<c); break;
