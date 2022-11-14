@@ -13,3 +13,6 @@ Author: Maciej Zieliński
 
 11.11.2022 - Started working on 7 segment display handling - solid progress but needs further testing
 Author: Maciej Zieliński, Bartosz Żołądź
+
+14.11.2022 - Working 7 segment display. Fixed S3 and S4 incorrecntly incrementing and decrementing the counter too much.
+Author: Maciej Zieliński, Bartosz Żołądź
