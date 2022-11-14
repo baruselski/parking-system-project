@@ -1,6 +1,16 @@
 In this file we will document all changes done to the project, as a means to keep track of our progress.
 This file will be updated regularly, at least weekly.
 
+18.10.2022 - Created a github page for the project.
+Author: Bartosz Żołądź
+
+23.10.2022 - Created a prototype wiki.
+Author: Maciej Zieliński
+
+28.10.2022 - Translated and transported wiki to https://github.com/baruselski/parking-system-project/wiki.
+Fixed formatting, added dates for tasks and milestones.
+Author: Bartosz Żołądź
+
 5.11.2022 - Completed a button interruption calling function and header
 Author: Maciej Zieliński
 
@@ -11,7 +21,7 @@ Press S2 - Activate interruption to control the number of free spaces (variable 
 S3 - Inkrements, S4 - Decrement
 Author: Maciej Zieliński
 
-11.11.2022 - Started working on 7 segment display handling - solid progress but needs further testing
+11.11.2022 - Started working on 7 segment display handling - solid progress but needs further testing.
 Author: Maciej Zieliński, Bartosz Żołądź
 
 14.11.2022 - Working 7 segment display. Fixed S3 and S4 incorrecntly incrementing and decrementing the counter too much.
