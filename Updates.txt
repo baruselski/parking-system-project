@@ -34,6 +34,5 @@ Author: Maciej Zieliński, Bartosz Żołądź
 There are still issues left with inconsistent opening and closing of the barrier, a fix is needed.
 Author: Maciej Zieliński
 
-24.11.2022 - After consulting with our project supervisor, we decided to focus on adding a timer to measure the time of opening and closing functions
-in order to hopefully fix the inconsistent servo mechanism handling.
+26.11.2022 - Optimalization of servo mechanism.
 author: Maciej Zieliński, Bartosz Żołądź
