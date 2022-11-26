@@ -31,7 +31,7 @@ Author: Maciej Zieliński, Bartosz Żołądź
 Author: Maciej Zieliński, Bartosz Żołądź
 
 22.11.2022 - Added S1 funcionality and fixed a bug which caused servo to constantly spin in one direction.
-There are still issues left with inconsistent opening and closing the barrier, a fix is needed.
+There are still issues left with inconsistent opening and closing of the barrier, a fix is needed.
 Author: Maciej Zieliński
 
 24.11.2022 - After consulting with our project supervisor, we decided to focus on adding a timer to measure the time of opening and closing functions
