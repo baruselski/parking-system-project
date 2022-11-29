@@ -35,4 +35,7 @@ There are still issues left with inconsistent opening and closing of the barrier
 Author: Maciej Zieliński
 
 26.11.2022 - Optimalization of servo mechanism.
-author: Maciej Zieliński, Bartosz Żołądź
+Author: Maciej Zieliński, Bartosz Żołądź
+
+29.11.2022 - Added photocell and timer funcionality and interrupt handlers. Have yet to implement in main program code.
+Author: Maciej Zieliński, Bartosz Żołądź
