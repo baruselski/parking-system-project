@@ -37,5 +37,8 @@ Author: Maciej Zieliński
 26.11.2022 - Optimalization of servo mechanism.
 Author: Maciej Zieliński, Bartosz Żołądź
 
-29.11.2022 - Added photocell and timer funcionality and interrupt handlers. Have yet to implement in main program code.
+29.11.2022 - Added photocell and timer funcionality and interrupt handlers.Still some issues left and ave yet to implement in main program code.
 Author: Maciej Zieliński, Bartosz Żołądź
+
+06.12.2022 - Fixed photocell interrupt handlers, still need add funcionality of analysis which photocell interrupted first.
+Author: Maciej Zieliński, Bartosz Żoładź
