@@ -41,4 +41,4 @@ Author: Maciej Zieliński, Bartosz Żołądź
 Author: Maciej Zieliński, Bartosz Żołądź
 
 06.12.2022 - Fixed photocell interrupt handlers, still need add funcionality of analysis which photocell interrupted first.
-Author: Maciej Zieliński, Bartosz Żoładź
+Author: Maciej Zieliński, Bartosz Żołądź
