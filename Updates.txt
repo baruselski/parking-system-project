@@ -25,7 +25,7 @@ Author: Maciej Zieliński
 Author: Maciej Zieliński, Bartosz Żołądź
 
 14.11.2022 - Working 7 segment display. Fixed S3 and S4 incorrecntly incrementing and decrementing the counter too much.
-Author: Maciej Zieliński, Bartosz Żołądź
+Author: Bartosz Żołądź
 
 19.11.2022 - Added an opening and closing function for the servo mechanism. Have yet to add S1 funcionality in the future.
 Author: Maciej Zieliński, Bartosz Żołądź
@@ -41,4 +41,7 @@ Author: Maciej Zieliński, Bartosz Żołądź
 Author: Maciej Zieliński, Bartosz Żołądź
 
 06.12.2022 - Fixed photocell interrupt handlers, still need to add funcionality of analysis which photocell interrupted first.
+Author: Maciej Zieliński, Bartosz Żołądź
+
+13.12.2022 - Added funcionality of analysis which photocell interrupted first. Added Timer funcionality and Multiple safety measures.
 Author: Maciej Zieliński, Bartosz Żołądź
