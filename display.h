@@ -16,8 +16,8 @@
 #define a	0		// Segments on PORTB			
 #define b	1				
 #define c	2			
-#define d	4		
-#define e	6		
+#define d	5		// Sprobowac na B5
+#define e	6		 
 #define f	7		
 #define g	8		
 #define digit1	6 		// Digits on PORTA
