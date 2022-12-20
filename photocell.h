@@ -7,6 +7,7 @@
 
 extern uint16_t time;
 extern uint16_t totaltime;
+extern uint8_t F1_first;
 extern uint8_t F1_broken;
 extern uint8_t F2_broken;
 extern uint8_t test;
