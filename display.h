@@ -16,7 +16,7 @@
 #define a	0		// Segments on PORTB			
 #define b	1				
 #define c	2			
-#define d	5		// Sprobowac na B5
+#define d	9		// Sprobowac na B9
 #define e	6		 
 #define f	7		
 #define g	8		
