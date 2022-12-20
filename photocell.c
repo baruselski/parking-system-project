@@ -4,6 +4,7 @@ void PORTB_IRQHandler(void);
 
 uint16_t time=0;
 uint16_t totaltime=0;
+uint8_t F1_first=0;
 uint8_t F1_broken=0;
 uint8_t F2_broken=0;
 uint8_t test=0;
@@ -42,6 +43,7 @@ switch(buf)
 	case F1_MASK:
 				if(F1_broken==0){
 						start=time;
+						F1_first=1;
 						F1_broken=1;
 				}
 				else{
@@ -54,13 +56,9 @@ switch(buf)
 				}																		
 				break;
 	case F2_MASK: 
-		
-			if(F2_broken){
-					F2_broken =0;
-							}
-			else{
+
 					F2_broken=1;
-							}	
+					
 				break;
 	default: break;
 						}					
