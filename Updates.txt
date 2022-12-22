@@ -45,3 +45,6 @@ Author: Maciej Zieliński, Bartosz Żołądź
 
 13.12.2022 - Added funcionality of analysis which photocell interrupted first. Added Timer funcionality and Multiple safety measures.
 Author: Maciej Zieliński, Bartosz Żołądź
+
+20.12.2022 - Fixed minor photocell interrupt issues, finished a working project prototype.
+Author: Maciej Zieliński
