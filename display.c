@@ -1,8 +1,8 @@
 #include "display.h"
 
 void display_init(void){
-		SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;
-		PORTB->PCR[a] |= PORT_PCR_MUX(1);
+		SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;					// Turning on port B
+		PORTB->PCR[a] |= PORT_PCR_MUX(1);						// PIN MUX jako PTBX
 		PORTB->PCR[b] |= PORT_PCR_MUX(1);
 		PORTB->PCR[c] |= PORT_PCR_MUX(1);
 		PORTB->PCR[d] |= PORT_PCR_MUX(1);
@@ -10,26 +10,26 @@ void display_init(void){
 		PORTB->PCR[f] |= PORT_PCR_MUX(1);
 		PORTB->PCR[g] |= PORT_PCR_MUX(1);
 	
-		PORTA->PCR[digit1] |= PORT_PCR_MUX(1);
+		PORTA->PCR[digit1] |= PORT_PCR_MUX(1);			// PIN MUX jako PTAX
 		PORTA->PCR[digit2] |= PORT_PCR_MUX(1);
 		
-		PTB->PDDR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);
-		PTA->PDDR |= (1<<digit1)|(1<<digit2);
+		PTB->PDDR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);	// Ustawienie jako wyjscia
+		PTA->PDDR |= (1<<digit1)|(1<<digit2);														// Ustawienie jako wyjscia
 }
 
 void display_func(int n,int seg){
-		if(seg==1){								// Wybór segmentu
-			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);
-			PTA->PCOR |= (1<<digit2);
-			PTA->PDOR |= (1<<digit1);
+		if(seg==1){								// Wybór seg=1 cyfra jednosci
+			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);		// Wyczyszczenie wyswietlacza
+			PTA->PCOR |= (1<<digit2);																					// Wylaczenie cyfry dziesiatek
+			PTA->PDOR |= (1<<digit1);																					// Wlaczenie cyfry jednosci
 		}
-		else if(seg==2){
-			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);
-			PTA->PCOR |= (1<<digit1);
-			PTA->PDOR |= (1<<digit2);
+		else if(seg==2){					// Wybór seg=2 cyfra dziesiatek
+			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);		// Wyczyszczenie wyswietlacza
+			PTA->PCOR |= (1<<digit1);																					// Wylaczenie cyfry jednosci
+			PTA->PDOR |= (1<<digit2);																					// Wlaczenie cyfry dziesiatek
 		}
 	
-		switch(n){								// Wybór cyfry dla danego segmentu
+		switch(n){								// Wybór segmentow dla danej cyfry
 			
 			case 0: PTB->PCOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f); break;
 			case 1: PTB->PCOR |= (1<<b)|(1<<c); break;
