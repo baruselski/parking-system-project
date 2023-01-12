@@ -13,8 +13,7 @@
 #define digit1	6 		// PIN number Digits on PORTA
 #define digit2	7		
 
-void display_init(void);					// Inicjalizacja wyswietlacza
-void display_func(int n,int seg); // Wyswietlenie podanej cyfry
-
+void display_init(void);					// Initialization of the display
+void display_func(int n,int seg); // Display function (exact number)
 
 #endif  /* DISPLAY_H */
