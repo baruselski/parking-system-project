@@ -9,7 +9,7 @@ void Klaw_Init(void)
 	PORTA->PCR[S2] |= PORT_PCR_MUX(1);
 	PORTA->PCR[S3] |= PORT_PCR_MUX(1);
 	PORTA->PCR[S4] |= PORT_PCR_MUX(1);
-	PORTA->PCR[S5] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;  // Dolaczenie rezystora pull-up i podpiecie go do VCC
+	PORTA->PCR[S5] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;  // Attach a pull-up resistor and connect it to VCC
 	PORTA->PCR[S2] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;
 	PORTA->PCR[S3] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;
 	PORTA->PCR[S4] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;
@@ -62,6 +62,6 @@ void PORTA_IRQHandler(void)	// Subprogram for handling S1 i S2
 										
 		default:			break;
 	}	
-	PORTA->ISFR |=  S1_MASK | S2_MASK;	// Deleton of all bits· ‰SF
+	PORTA->ISFR |=  S1_MASK | S2_MASK;	// Deleton of all bitsÂ· â€°SF
 	NVIC_ClearPendingIRQ(PORTA_IRQn);
 }
