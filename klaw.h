@@ -12,7 +12,7 @@
 extern uint8_t S1_press;
 extern uint8_t S2_press;
 
-void Klaw_Init(void);			// Inicjalizacja klawiatury
-void Klaw_S1_S2_Int(void);// Inicjalizacja przerwan od klawiatury
+void Klaw_Init(void);			// Initialization of the keyboard
+void Klaw_S1_S2_Int(void);// Initialization of keyboard interrupts
 
 
