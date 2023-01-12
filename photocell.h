@@ -6,11 +6,10 @@
 #define F2_MASK	(1<<4)			// Mask for F2
 
 // Zmienne globalne
-extern uint16_t time;					// Czas dla funkcji SyStick
-extern uint8_t F1_first;			// Zmienna sygnalizacyjna wykorzystywana do wykrycia, ktora fotokomorka byla przerwana jako pierwsza
-extern uint8_t F1_broken;			// Sygnalizacja przerwania fotokomorki F1
-extern uint8_t F2_broken;			// Sygnalizacja przerwania fotokomorki F2
-extern uint8_t test;					// Sygnalizacja wykrycia pojazdu (test=1 gdy przerwanie fotokomorki F1 jest dluzsze od 1s)
+extern uint16_t time;					// time for SysTick 
+extern uint8_t F1_first;			// Variable for determining which photocell was interrupt first
+extern uint8_t F1_broken;			// Variable to sygnalize F1 interrupt
+extern uint8_t F2_broken;			// Variable to sygnalize F2 interrupt
+extern uint8_t test;					// Variable for checking if photocell interrupt was longer than 1s(test=1 if longer than 1s)
 
-void Photocell_Init(void);		// Inicjalizacja pinow i przerwania od pinow
-
+void Photocell_Init(void);		// Initialization
