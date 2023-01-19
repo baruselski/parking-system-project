@@ -134,7 +134,7 @@ int main(){
 			// (stop) If opening time is lower than 10s
 					}
 		
-						test=0;																	// Wyzerowanie wszystkich zmiennych sygnalizacyjnych
+						test=0;																	// Clearn all variables
 						F1_first=0;
 						F2_broken=0;
 						F1_broken=0;
