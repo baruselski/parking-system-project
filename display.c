@@ -14,19 +14,19 @@ void display_init(void){
 		PORTA->PCR[digit2] |= PORT_PCR_MUX(1);
 		
 		PTB->PDDR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);	// Set as outputs
-		PTA->PDDR |= (1<<digit1)|(1<<digit2);														// Ustawienie jako wyjscia
+		PTA->PDDR |= (1<<digit1)|(1<<digit2);														
 }
 
 void display_func(int n,int seg){
 		if(seg==1){								// Choose seg=1 number of ones
 			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);		// Clean the display
-			PTA->PCOR |= (1<<digit2);																					// Wylaczenie cyfry dziesiatek
-			PTA->PDOR |= (1<<digit1);																					// Wlaczenie cyfry jednosci
+			PTA->PCOR |= (1<<digit2);																					// Turn off number of tens
+			PTA->PDOR |= (1<<digit1);																					// Turn on number of ones
 		}
 		else if(seg==2){							// Choose seg=2 number of tens
 			PTB->PDOR |= (1<<a)|(1<<b)|(1<<c)|(1<<d)|(1<<e)|(1<<f)|(1<<g);		// Clean the display
-			PTA->PCOR |= (1<<digit1);																					// Wylaczenie cyfry jednosci
-			PTA->PDOR |= (1<<digit2);																					// Wlaczenie cyfry dziesiatek
+			PTA->PCOR |= (1<<digit1);																					// Turn off number of ones
+			PTA->PDOR |= (1<<digit2);																					// Turn on number of tens
 		}
 	
 		switch(n){								// Choose segments for each number
